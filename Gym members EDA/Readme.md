@@ -1,2 +1,4 @@
 # EXPERIENCE LEVEL PREDICTION OF A GYM MEMBER USING PREDICTIVE ANALYTIS MODELS
------------------------------------------------------------------------
+
+Objectivo:
++ sfasfd
