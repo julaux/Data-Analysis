@@ -1,0 +1,30 @@
+CREATE TABLE deposits(
+    deposit_id CHAR(36) PRIMARY KEY,
+    player_id CHAR(36) NOT NULL,
+    deposit_amount DECIMAL(10, 2) NOT NULL,
+    deposit_date DATE NOT NULL
+);
+
+CREATE TABLE internal_records(
+  month VARCHAR(9) NOT NULL,
+  expected_ftd INT NOT NULL,
+  expected_cpa DECIMAL(10, 2) NOT NULL
+);
+
+CREATE TABLE players(
+  player_id CHAR(36) PRIMARY KEY,
+  name VARCHAR(100) NOT NULL,
+  registration_date DATE NOT NULL,
+  country VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE traffic_sources(
+  player_id CHAR(36) NOT NULL,
+  trafficker VARCHAR(100) NOT NULL,
+  cost_of_acquisition DECIMAL(10, 2) NOT NULL,
+  registration_date DATE NOT NULL,
+  
+  -- Foraign key
+  CONSTRAINT fk_player FOREIGN KEY (player_id) REFERENCES players(player_id)
+);
+
