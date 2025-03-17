@@ -1,0 +1,20 @@
+{
+    "remove": [
+        "srl",
+        "amex",
+        "import",
+        "export",
+        "antisel",
+        "ro",
+        "interlab",
+        "austria",
+        "continental",
+        "automotive",
+        "romania",
+        "vitesco",
+        "technologies",
+        "engineering",
+        "aurocon",
+        "compec"
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "remove": [
+        "air",
+        "liquide",
+        "spatial",
+        "guyane"
+    ]
+}
