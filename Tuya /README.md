@@ -15,8 +15,7 @@ Se cuenta con un modelo relacional de base de datos, la cual consta de cinco tab
 
 1. Número total de ordenes registradas.
 
-R/ 
-
+R/
 SELECT COUNT(*) AS total_ordenes
 FROM orden;
 
