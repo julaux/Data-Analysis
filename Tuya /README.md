@@ -21,12 +21,14 @@ SELECT COUNT(*) AS total_ordenes
 FROM orden;
 
 3. Número de clientes que han realizado órdenes entre el 01-01-2021 y la fecha actual.
+   
 R/
+
 SELECT COUNT(DISTINCT o.cedula) AS total_clientes
 FROM orden o
 WHERE o.fecha_orden BETWEEN '2021-01-01' AND CURRENT_DATE;
 
-4. Listado total de clientes con la cantidad total de órdenes realizadas (conteo), ordenando de mayor a menor nro. de órdenes
+5. Listado total de clientes con la cantidad total de órdenes realizadas (conteo), ordenando de mayor a menor nro. de órdenes
 R/
 SELECT c.nombre AS cliente, COUNT(o.id_orden) AS total_ordenes
 FROM cliente c
@@ -34,7 +36,7 @@ JOIN orden o ON c.cedula = o.cedula
 GROUP BY c.cedula
 ORDER BY total_ordenes DESC;
 
-5. Detalle completo (datos del cliente, fecha, nombre producto, cantidad) del pedido cuyo monto fue el más grande (en valor, no en unidades) en el año 2020. 
+6. Detalle completo (datos del cliente, fecha, nombre producto, cantidad) del pedido cuyo monto fue el más grande (en valor, no en unidades) en el año 2020. 
 R/
 SELECT 
     c.nombre AS cliente, 
@@ -50,7 +52,7 @@ WHERE o.fecha_orden BETWEEN '2020-01-01' AND '2020-12-31'
 ORDER BY (d.precio_unitario * d.cantidad) DESC
 LIMIT 1;
 
-6. Valor total vendido por mes y año.
+7. Valor total vendido por mes y año.
 R/ 
 SELECT 
     EXTRACT(YEAR FROM o.fecha_orden) AS anio,
@@ -62,7 +64,7 @@ WHERE o.fecha_orden BETWEEN '2020-01-01' AND '2020-12-31'
 GROUP BY EXTRACT(YEAR FROM o.fecha_orden), EXTRACT(MONTH FROM o.fecha_orden)
 ORDER BY anio, mes;
 
-7. Para el cliente con cédula 123456, especificar para cada producto, el número de veces que lo ha comprado y el valor total gastado en dicho producto. 
+8. Para el cliente con cédula 123456, especificar para cada producto, el número de veces que lo ha comprado y el valor total gastado en dicho producto. 
 Ordenar el resultado de mayor a menor.
 R/
 SELECT 
