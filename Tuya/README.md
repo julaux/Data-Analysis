@@ -1,6 +1,10 @@
-# Análisis y Segmentación de Puntos de Venta
+# PRUEBA DATA ANALYST - JULIAN AUX
 
-Este proyecto tiene como objetivo **analizar los puntos de venta** empleando **técnicas de aprendizaje no supervisado** para identificar patrones, segmentar los puntos de venta y generar estrategias basadas en datos para **optimizar el rendimiento**. A continuación, se describe el proceso paso a paso, dividido en cuatro fases.
+Esta prueba consta de tres fases, la cuales son:
+- Fase 1: Evaluar conocimiento técnico en SQL.
+- Fase 2: Analizar técnicamene la productividad de un cargo y proponer recomendaciones para cada uno de los cargos.
+- Fase 3: Realizar un modelo de segmentación para definir puntos de venta de acuerdo a las caracteristicas que compartan las variables del dataset y así proponer recomendaciones para cada uno de los segmentos.
+- Fase 4: Presentar los hallazgos y proponer las recomendaciones sobre qué cargos contratar para cada segmento (punto de venta) según las conclusiones de la Fase 2.
 
 ## Fase 1: Extracción y Combinación de Datos
 
