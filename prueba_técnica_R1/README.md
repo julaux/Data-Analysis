@@ -1,6 +1,6 @@
 # Proyecto ETL - Prueba Técnica R1
 
-Este proyecto implementa un proceso **ETL (Extracción, Transformación y Carga)** que se conecta a una base de datos SQLite, extrae datos de archivos CSV, los transforma (eliminando tildes y comas) y los carga en la base de datos.
+Este proyecto realiza un proceso **ETL (Extracción, Transformación y Carga)*, se conecta a una base de datos SQL, extrae datos de archivos CSV, los transforma (eliminando tildes y comas) y los carga en la base de datos.
 
 ## Descripción
 
@@ -32,4 +32,5 @@ Proyecto_ETL/
   - `asignaturas.csv`: Información sobre las asignaturas.
   - `profesores.csv`: Información sobre los profesores.
   - `historial_academico.csv`: Relaciona a los estudiantes con sus asignaturas, profesores y calificaciones.
-- **ETL.py**: El script Python que realiza el proceso ETL.
+    
+- **ETL.py**:¨Proceso ETL.
