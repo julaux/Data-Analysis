@@ -1,23 +1,27 @@
 # Proyecto ETL - Prueba Técnica R1
 
+Este proyecto implementa un proceso **ETL (Extracción, Transformación y Carga)** que se conecta a una base de datos SQLite, extrae datos de archivos CSV, los transforma (eliminando tildes y comas) y los carga en la base de datos.
+
 ## Descripción
-Este script realiza un proceso ETL (Extracción, Transformación y Carga) para limpiar y cargar datos de archivos CSV a una base de datos SQLite.
 
-## Archivos
+Este script realiza las siguientes operaciones:
 
-- `Tablas/`: Carpeta que contiene los archivos CSV de ejemplo (`estudiantes.csv`, `asignaturas.csv`, `profesores.csv`, `historial_academico.csv`).
-- `ETL.py`: El script Python que realiza el proceso ETL.
+1. **Extracción**: Los datos se extraen desde cuatro archivos CSV ubicados en la carpeta `Tablas/`.
+2. **Transformación**: Se realiza una limpieza de datos.
+3. **Carga**: Se cargan los datos en las tablas correspondientes, la base de datos es `Python_test.db`.
 
-## Requisitos
-- Python 3.x
-- pandas
-- sqlite3
+## Estructura del Proyecto
+Proyecto_ETL/
+├── Tablas/
+│ ├── estudiantes.csv
+│ ├── asignaturas.csv
+│ ├── profesores.csv
+│ └── historial_academico.csv
+└── ETL.py
 
-## Instrucciones
-
-1. Clona este repositorio.
-2. Coloca los archivos CSV en la carpeta `Tablas/`.
-3. Ejecuta el script `ETL.py`.
-
-```bash
-python ETL.py
+- **Tablas/**: Contiene los archivos CSV con los datos de entrada.
+  - `estudiantes.csv`: Datos de los estudiantes.
+  - `asignaturas.csv`: Información sobre las asignaturas.
+  - `profesores.csv`: Información sobre los profesores.
+  - `historial_academico.csv`: Relaciona a los estudiantes con sus asignaturas, profesores y calificaciones.
+- **ETL.py**: El script Python que realiza el proceso ETL.
