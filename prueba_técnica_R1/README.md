@@ -11,15 +11,21 @@ Este script realiza las siguientes operaciones:
 3. **Carga**: Se cargan los datos en las tablas correspondientes, la base de datos es `Python_test.db`.
 
 ## Estructura del Proyecto
-´´´ sql
+
 Proyecto_ETL/
+
 ├── Tablas/
+
 │ ├── estudiantes.csv
+
 │ ├── asignaturas.csv
+
 │ ├── profesores.csv
+
 │ └── historial_academico.csv
+
 └── ETL.py
-´´´
+
 
 - **Tablas/**: Contiene los archivos CSV con los datos de entrada.
   - `estudiantes.csv`: Datos de los estudiantes.
